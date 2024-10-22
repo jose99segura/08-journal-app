@@ -1,13 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './styles.css'
-import { BrowserRouter } from 'react-router-dom'
-import { JournalApp } from './JournalApp'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+import { JournalApp } from './JournalApp';
+import './styles.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <BrowserRouter>
       <JournalApp />
     </BrowserRouter>
-  </StrictMode>,
+  </React.StrictMode>
 )
